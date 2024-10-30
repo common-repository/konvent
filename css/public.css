@@ -1,0 +1,76 @@
+
+ul.konvent-list{
+	margin: 0;
+	padding: 0;
+	width:  213px;
+	max-width: 100%;
+}
+
+ul.konvent-list li{
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin: 0 0 12px;
+	background: #ffffff;
+	width: 213px;
+	max-width: 100%;
+	list-style: none !important;
+}
+
+.konvent-list a{
+	margin: 0;
+	padding: 0;
+	display: block;
+	color: #51a351;
+	text-decoration: none;
+	line-height: 1.4;
+}
+
+.konvent-list img{
+	display: block;
+}
+
+.konvent-list strong{
+	color: #fa43a7;
+	font-size: 12pt;
+}
+
+.konvent-list .konvent-info{
+	color: #4a944a;
+	font-size: 10pt;
+}
+
+.konvent-list strong, .konvent-list  .konvent-info{
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.konvent-list strong, .konvent-list a img, .konvent-list .konvent-info{
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+}
+
+.konvent-list strong{bottom: 90%; opacity:0;}
+.konvent-list a:hover strong{bottom: 50%;  opacity:1;}
+.konvent-list .konvent-info{ top: 90%;  opacity:0;}
+.konvent-list a:hover .konvent-info{top: 50%;  opacity:1}
+.konvent-list a:hover img{opacity: .1}
+
+
+.konvent-tickettypes{
+	display: table;
+}
+
+.konvent-tickettypes .konvent-tickettypes-wrap{
+	display: table-row;
+}
+
+.konvent-tickettypes .konvent-tickettypes-wrap span{
+	display: table-cell;
+	padding-right: 1em;
+}
